@@ -108,26 +108,30 @@ public class House {
     }
     public void vivod()
     {
-        System.out.println("Уникальный идентификатор квартиры:"+id+"\nНомер квартиры:"+numberHouse+"\nЭтаж:"+stage+"\nПлощадь:"+area+"\nТип здания:"+typeBuilding+"\nУлица:"+street+"\nКоличество комнат:"+countRoom+"\nСрок эксплуатации:"+lifeTime+"\n");
+        System.out.println("Г“Г­ГЁГЄГ Г«ГјГ­Г»Г© ГЁГ¤ГҐГ­ГІГЁГґГЁГЄГ ГІГ®Г° ГЄГўГ Г°ГІГЁГ°Г»:"+id+"\nГЌГ®Г¬ГҐГ° ГЄГўГ Г°ГІГЁГ°Г»:"+numberHouse+"\nГќГІГ Г¦:"+stage+"\nГЏГ«Г®Г№Г Г¤Гј:"+area+"\nГ’ГЁГЇ Г§Г¤Г Г­ГЁГї:"+typeBuilding+"\nГ“Г«ГЁГ¶Г :"+street+"\nГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЄГ®Г¬Г­Г ГІ:"+countRoom+"\nГ‘Г°Г®ГЄ ГЅГЄГ±ГЇГ«ГіГ ГІГ Г¶ГЁГЁ:"+lifeTime+"\n");
+    }
+     public void vivod()
+    {
+        System.out.println("РЈРЅРёРєР°Р»СЊРЅС‹Р№ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РєРІР°СЂС‚РёСЂС‹:"+id+"\nРќРѕРјРµСЂ РєРІР°СЂС‚РёСЂС‹:"+numberHouse+"\nР­С‚Р°Р¶:"+stage+"\nРџР»РѕС‰Р°РґСЊ:"+area+"\nРўРёРї Р·РґР°РЅРёСЏ:"+typeBuilding+"\nРЈР»РёС†Р°:"+street+"\nРљРѕР»РёС‡РµСЃС‚РІРѕ РєРѕРјРЅР°С‚:"+countRoom+"\nРЎСЂРѕРє СЌРєСЃРїР»СѓР°С‚Р°С†РёРё:"+lifeTime+"\n");
     }
     public void vvod()
     {
         try {
-            System.out.println("Введите id квартиры");
+            System.out.println("Р’РІРµРґРёС‚Рµ id РєРІР°СЂС‚РёСЂС‹");
             id= parseInt(br.readLine());
-            System.out.println("Введите номер квартиры");
+            System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РєРІР°СЂС‚РёСЂС‹");
             numberHouse=br.readLine();
-            System.out.println("Введите площадь квартиры");
+            System.out.println("Р’РІРµРґРёС‚Рµ РїР»РѕС‰Р°РґСЊ РєРІР°СЂС‚РёСЂС‹");
             stage= parseInt(br.readLine());
-            System.out.println("Введите этаж");
+            System.out.println("Р’РІРµРґРёС‚Рµ СЌС‚Р°Р¶");
             area= parseInt(br.readLine());
-            System.out.println("Введите тип здания");
+            System.out.println("Р’РІРµРґРёС‚Рµ С‚РёРї Р·РґР°РЅРёСЏ");
             typeBuilding=br.readLine();
-            System.out.println("Введите название улицы");
+            System.out.println("Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ СѓР»РёС†С‹");
             street=br.readLine();
-            System.out.println("Введите количество комнат");
+            System.out.println("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РєРѕРјРЅР°С‚");
             countRoom= parseInt(br.readLine());
-            System.out.println("Введите срок эксплуатации");
+            System.out.println("Р’РІРµРґРёС‚Рµ СЃСЂРѕРє СЌРєСЃРїР»СѓР°С‚Р°С†РёРё");
             lifeTime=Integer.parseInt(br.readLine());
         } catch (IOException e) {e.printStackTrace();}
     }
@@ -143,16 +147,16 @@ public class House {
             boolean f=true;
             while(f)
             {
-                System.out.println("\nВыберите пункт меню:");
-                System.out.println("1 - Ввести информацию о квартирах");
-                System.out.println("2 - Вывести список квартир, имеющих заданное число комнат");
-                System.out.println("3 - Вывести список квартир, имеющих заданное число комнат и расположенных\n на этаже, который находится в заданном промежутке");
-                System.out.println("4 - Вывести список квартир, имеющих площадь, превосходящую заданную");
-                System.out.println("5 - Выход");
+                System.out.println("\nР’С‹Р±РµСЂРёС‚Рµ РїСѓРЅРєС‚ РјРµРЅСЋ:");
+                System.out.println("1 - Р’РІРµСЃС‚Рё РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ РєРІР°СЂС‚РёСЂР°С…");
+                System.out.println("2 - Р’С‹РІРµСЃС‚Рё СЃРїРёСЃРѕРє РєРІР°СЂС‚РёСЂ, РёРјРµСЋС‰РёС… Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ РєРѕРјРЅР°С‚");
+                System.out.println("3 - Р’С‹РІРµСЃС‚Рё СЃРїРёСЃРѕРє РєРІР°СЂС‚РёСЂ, РёРјРµСЋС‰РёС… Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ РєРѕРјРЅР°С‚ Рё СЂР°СЃРїРѕР»РѕР¶РµРЅРЅС‹С…\n РЅР° СЌС‚Р°Р¶Рµ, РєРѕС‚РѕСЂС‹Р№ РЅР°С…РѕРґРёС‚СЃСЏ РІ Р·Р°РґР°РЅРЅРѕРј РїСЂРѕРјРµР¶СѓС‚РєРµ");
+                System.out.println("4 - Р’С‹РІРµСЃС‚Рё СЃРїРёСЃРѕРє РєРІР°СЂС‚РёСЂ, РёРјРµСЋС‰РёС… РїР»РѕС‰Р°РґСЊ, РїСЂРµРІРѕСЃС…РѕРґСЏС‰СѓСЋ Р·Р°РґР°РЅРЅСѓСЋ");
+                System.out.println("5 - Р’С‹С…РѕРґ");
                 int N=Integer.parseInt(br.readLine());
                 switch (N) {
                     case 1 -> {
-                        System.out.println("Введите количество квартир");
+                        System.out.println("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РєРІР°СЂС‚РёСЂ");
                         int n = Integer.parseInt(br.readLine());
                         s = new House[n];
                         for (int i = 0; i < s.length; i++) {
@@ -161,16 +165,16 @@ public class House {
                         }
                     }
                     case 2 -> {
-                        System.out.print("Введите количество комнат\n");
+                        System.out.print("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РєРѕРјРЅР°С‚\n");
                         roomCount = Integer.parseInt(br.readLine());
                         for (int i = 0; i < s.length; i++)
                             if (roomCount == s[i].getCountRoom())
                                 System.out.print(s[i].toString());
                     }
                     case 3 -> {
-                        System.out.print("Введите количество комнат\n");
+                        System.out.print("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РєРѕРјРЅР°С‚\n");
                         roomCount = Integer.parseInt(br.readLine());
-                        System.out.print("Введите промежуток этажей\n");
+                        System.out.print("Р’РІРµРґРёС‚Рµ РїСЂРѕРјРµР¶СѓС‚РѕРє СЌС‚Р°Р¶РµР№\n");
                         int startFloor = Integer.parseInt(br.readLine());
                         int endFloor = Integer.parseInt(br.readLine());
                         for (House house : s)
@@ -178,7 +182,7 @@ public class House {
                                 System.out.print(house.toString());
                     }
                     case 4 -> {
-                        System.out.print("Введите площадь\n");
+                        System.out.print("Р’РІРµРґРёС‚Рµ РїР»РѕС‰Р°РґСЊ\n");
                         int square = Integer.parseInt(br.readLine());
                         for (House house : s)
                             if (square == house.getArea())
